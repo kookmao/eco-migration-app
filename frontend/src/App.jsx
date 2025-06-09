@@ -33,7 +33,7 @@ function App() {
   const [migrationRoutes, setMigrationRoutes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/occurrences")
+    fetch('https://eco-migration-app.onrender.com/api/occurrences')
       .then(res => res.json())
       .then(fetchedData => {
         // Enrich the data with state/province information based on coordinates
