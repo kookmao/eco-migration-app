@@ -7,8 +7,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    # allow_origins=["https://kookmao.github.io"],  # Allow frontend origin
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["https://kookmao.github.io"],  # Allow frontend origin
+    # allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
